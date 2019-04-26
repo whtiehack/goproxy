@@ -1,0 +1,14 @@
+{
+  "name": "goproxy",
+  "description": "goproxy.io",
+  "keywords": ["goproxy"],
+  "env": {
+    "VER": {
+       "description": "goproxy",
+       "value": "goproxy"
+     }
+  },
+  "website": "https://github.com/whtiehack/goproxy",
+  "repository": "https://github.com/whtiehack/goproxy",
+  "stack": "container"
+ }
