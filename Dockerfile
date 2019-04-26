@@ -1,4 +1,9 @@
-FROM gomods/athens:v0.2.0
-ENV GO_ENV=production
-EXPOSE 3000/tcp
-CMD ["athens-proxy", "-config_file=/config/config.toml"]
+FROM goproxy/goproxy:latest AS build
+
+FROM alpine:latest
+COPY --from=build /goproxy /goproxy 
+ENV PORT=8081
+RUN apk add --no-cache -U git mercurial subversion bzr fossil
+RUN mkdir -m 777 /go
+CMD /goproxy -listen=0.0.0.0:$PORT -cacheDir=/go
+
