@@ -8,7 +8,7 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 
-用 [goproxy](https://github.com/goproxyio/goproxy] 在 [heroku](https://heroku.com) 自建 go modules 代理。
+用 [goproxy](https://github.com/goproxyio/goproxy) 在 [heroku](https://heroku.com) 自建 go modules 代理。
 
 
 
