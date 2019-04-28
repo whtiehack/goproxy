@@ -27,3 +27,11 @@ windows:
 
 Note: This proxy can't fetch your private repos of course.
 
+
+
+
+
+4. 直接打开你申请的链接应该是显示空白。
+
+可以用这个链接测试一下： https://你申请的herokuapp链接/github.com/nsqio/nsq/@v/list
+
