@@ -24,5 +24,6 @@ windows:
 
 3. Now, when you build and run your applications, go will fetch dependencies via `https://你申请的herokuapp链接`.
 
+
 Note: This proxy can't fetch your private repos of course.
 
