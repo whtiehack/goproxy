@@ -4,7 +4,7 @@
   "keywords": ["goproxy"],
   "env": {
     "VER": {
-       "description": "goproxy",
+       "description": "env example",
        "value": "goproxy"
      }
   },
