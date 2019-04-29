@@ -14,7 +14,7 @@
 
 > App name  是一个唯一的 app名字
 
-> Choose a region 有美国和欧洲可以选。个人认为美国的速度还不错。
+> Choose a region 有美国和欧洲可以选。个人认为美国的速度还不错。会在region里随机分配一个节点给你，有的节点很快，有的比较慢。不过还是会比 goproxy.io 之类的快。
 
 > 点 Create app ,等一会就部署完成了。
 
@@ -42,4 +42,9 @@ windows:
 4. 直接打开你申请的链接应该是显示空白。
 
 可以用这个链接测试一下： https://youappname.herokuapp.com/github.com/nsqio/nsq/@v/list
+
+
+5. heroku 部署的 app，在一段时间内没有流量会被冻结。然后有人访问的时候就才会再次启动。（所以第一次打开会比较慢，启动好了就快了）
+
+6. 提供一个懒人用测试地址，多人用不能保证速度，所以还是建议自己 fork 自己建立一个 app。 https://goproxyus.herokuapp.com
 
