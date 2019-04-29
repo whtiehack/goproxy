@@ -1,4 +1,4 @@
-### 自建 go modules 代理
+### 用 [goproxy](https://github.com/goproxyio/goproxy) 自建 go modules 代理，部署到 [heroku](https://heroku.com)
 
 
 
