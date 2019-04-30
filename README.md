@@ -48,3 +48,17 @@ windows:
 
 6. 提供一个懒人用测试地址，多人用不能保证速度，所以还是建议自己 fork 自己建立一个 app。 https://goproxyus.herokuapp.com
 
+
+###  额外的功能
+
+* 可以用这个代理下载仓库 
+
+1. https://goproxyus.herokuapp.com/github.com/whtiehack/goproxy/@latest
+
+2. https://goproxyus.herokuapp.com/github.com/whtiehack/goproxy/@v/v0.0.0-20190429094219-4f70e1c14471.zip
+
+> 或者你知道明确版本的放可以构造url直接下载 : https://goproxyus.herokuapp.com/github.com/node-pinus/pinus/@v/v1.3.10.zip
+
+
+* 被缓存下来的数据可以打开 https://goproxyus.herokuapp.com 直接浏览并下载。
+
