@@ -1,6 +1,6 @@
 {
   "name": "goproxy",
-  "description": "goproxy.io",
+  "description": "用 goproxy 自建 go modules 代理",
   "keywords": [
     "goproxy"
   ],
