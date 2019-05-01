@@ -1,3 +1,16 @@
+
+# 墙内学习 golang 的第一步，自己搭建一个速度快的go modules 代理。 
+
+> 最新的  1.12,1.11都开始支持 go modules了， GOPROXY 还是很好用的，再也不用担心有包下载不下来了。
+
+
+启用 go modules
+
+```
+set GO111MODULE=on    //windows
+export GO111MODULE=on //linux
+```
+
 ### 用 [goproxy](https://github.com/goproxyio/goproxy) 自建 go modules 代理，部署到 [heroku](https://heroku.com)
 
 
@@ -5,18 +18,20 @@
 
 1. 点击下面这个按钮（或者先fork再点，这样可以自己修改部署脚本）
 
+
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 
 用 [goproxy](https://github.com/goproxyio/goproxy) 在 [heroku](https://heroku.com) 自建 go modules 代理。
 
-![image](https://user-images.githubusercontent.com/12741016/56861611-1606b680-69d5-11e9-825a-6fa111a782ed.png)
 
 > App name  是一个唯一的 app名字
 
 > Choose a region 有美国和欧洲可以选。个人认为美国的速度还不错。会在region里随机分配一个节点给你，有的节点很快，有的比较慢。不过还是会比 goproxy.io 之类的快。
 
 > 点 Create app ,等一会就部署完成了。
+
+![image](https://user-images.githubusercontent.com/12741016/56861611-1606b680-69d5-11e9-825a-6fa111a782ed.png)
 
 
 2. 现在你就可以使用你自建的 go modules 代理了。
@@ -25,7 +40,11 @@ linux:
 `export GOPROXY=https://youappname.herokuapp.com`
 
 windows:
-`$env:GOPROXY = "https://youappname.herokuapp.com"`
+```
+$env:GOPROXY = "https://youappname.herokuapp.com"
+or
+set GOPROXY="https://youappname.herokuapp.com"
+```
 
 
 3. Now, when you build and run your applications, go will fetch dependencies via `https://youappname.herokuapp.com`.
