@@ -77,7 +77,7 @@ set GOPROXY="https://youappname.herokuapp.com"
 
 2. https://goproxyus.herokuapp.com/github.com/whtiehack/goproxy/@v/v0.0.0-20190429094219-4f70e1c14471.zip
 
-3. latest 有个问题，不会再次去拿最新代码。
+3. latest 有个问题，不会再次去拿最新代码，因为有缓存。(应用冻结以后再次访问来重启，缓存就会消失）
 
 > 或者你知道明确版本的放可以构造url直接下载 : https://goproxyus.herokuapp.com/github.com/node-pinus/pinus/@v/v1.3.10.zip
 
